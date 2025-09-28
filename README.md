@@ -1,66 +1,63 @@
-[Space Station 13 Hub](https://www.ss13.se/)
+[Space Station 13 StatsHUB](https://stats.aperture13.online/)
 ================================================================================
 
-A server hub dedicated to SS13 and possibly a better replacement for the default
-server page at [Byond](https://www.byond.com/games/exadv1/spacestation13).
+Репозиторий в котором находится код для парсинга всех доступных серверов из ХАБа
+[Byond](https://www.byond.com/games/exadv1/spacestation13).
 
-Status
+Статус
 --------------------------------------------------------------------------------
 
-***Beta mode live at [www.ss13.se](https://www.ss13.se/)***
+***Посмотреть как работает можно тут [stats.aperture13.online](https://stats.aperture13.online/)***
 
-The code has ben run in production for some months now and seems to be stable
-enough. I guess we're now back in beta?
-
-Features For Players
+Фичи для любознательных
 --------------------------------------------------------------------------------
 
-- A friendlier server list.
+- Более удобный список серверов.
 
-- Detailed pages for most public servers.
+- Подробные страницы большинства публичных серверов.
 
-- Player count stats and graphs.
+- Статистика и графики количества игроков по часам, дням и неделям.
 
-- Predict when it's a "good" time for you to play.
+- Прогнозирование "хорошего" времени для игры.
 
-Data Source
+Откуда берутся данные
 --------------------------------------------------------------------------------
 
-The data used for the **public** servers is scraped from the [Byond](http://www.byond.com/games/exadv1/spacestation13) page.
-Relying on Byond means we're affected by their server downtime (no page, no data),
-but we will automatically discover any new public servers.
+Данные **публичных** серверов, берутся со страницы [BYOND](http://www.byond.com/games/exadv1/spacestation13).
+Из минусов - если ХАБ BYOND упадёт то сервис не сможет тянуть данные с ХАБа а значит
+данные не будут обновляться.
 
-Since bad hosts and owners can spoof a server's reported player count, there's
-no way to guarantee that the calculated stats and graphs are 100% correct.
+Стоит учесть что многие хостеры имеют привычку завышать циферку онлайна при помощи ботов,
+а ещё что ХАБ BYOND имеет привычку показывать неправильную цифру, особенно при большом онлайне.
 
-But then again it's just some silly numbers for a game.
-
-Missing a server?
+Вашего сервера нет в списке?
 --------------------------------------------------------------------------------
 
-Since we're scraping only **public** servers, we're missing any **private** that's
-hidden from the Byond page (I also discarded the poller, so no more polling
-**private** servers from a VIP list).
+Сервис собирает данные с ХАБа BYOND в котором отображаются только **публичные** сервера.
+Если сервера нет в ХАБе - значит сервер не будет отображаться и у нас.
 
-We also see a lot of **public** servers coming and going, or merely changing
-names a lot. So any servers that hasn't been seen for 3 days, or more, will be
-automagically removed from the list.
+Есть кстати множество серверов которые меняют своё название или запускаются ради тестов но выводятся в хаб,
+поэтому все **публичные** проекты в сервисе будут убраны через 3 дня если на них за этот промежуток времени не было онлайна.
 
-License
+Лицензия
 --------------------------------------------------------------------------------
 
-MIT License, see the LICENSE file.
+MIT License, смотри файл LICENSE.
 
 Credits
 --------------------------------------------------------------------------------
 
-- [stuicey](https://www.reddit.com/user/stuicey) - Thanks for original idea and [first work](https://www.reddit.com/r/SS13/comments/2p6znr/hub_population_data/).
+- [stuicey](https://www.reddit.com/user/stuicey) - Спасибо за оригинальную идею и [первые шаги](https://www.reddit.com/r/SS13/comments/2p6znr/hub_population_data/).
 
-- [headswe](https://www.reddit.com/user/headswe) - Thanks for [reverse engineered code](http://www.reddit.com/r/SS13/comments/31b5im/a_bunch_of_graphs_for_all_servers/cq11nld) for polling SS13 servers.
+- [headswe](https://www.reddit.com/user/headswe) - Спасибо за [реверс-инженеринг хаба](http://www.reddit.com/r/SS13/comments/31b5im/a_bunch_of_graphs_for_all_servers/cq11nld) для подтягивания статистики.
 
-- [Hugo14453](https://github.com/Hugo14453) - Thanks for new corgi favicon.
+- [Hugo14453](https://github.com/Hugo14453) - Спасибо за иконку Яна.
 
-Todo
+- [lmas](https://github.com/lmas) - Спасибо за создание такого чудесного проекта.
+
+- [skull132](https://github.com/skull132/ss13_se) - Спасибо за то что сохранил исходники когда у предыдущего автора проект пропал.
+
+Что надо сделать
 --------------------------------------------------------------------------------
 
 - Refactor the hub scrapping to instead use http://www.byond.com/games/Exadv1/SpaceStation13?format=text

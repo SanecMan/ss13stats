@@ -2,6 +2,8 @@ github.com/PuerkitoBio/goquery v1.5.0 h1:uGvmFXOA73IKluu/F84Xd1tt/z07GYm8X49XKHP
 github.com/PuerkitoBio/goquery v1.5.0/go.mod h1:qD2PgZ9lccMbQlc7eEOjaeRlFQON7xY8kdmcsrnKqMg=
 github.com/andybalholm/cascadia v1.0.0 h1:hOCXnnZ5A+3eVDX8pvgl4kofXv2ELss0bKcqRySc45o=
 github.com/andybalholm/cascadia v1.0.0/go.mod h1:GsXiBklL0woXo1j/WYWtSYYC4ouU9PqHO0sqidkEA4Y=
+github.com/blend/go-sdk v0.0.0-20191106184903-8f22aee8cd48 h1:/KS09PHiM+R0TD0IBjt3Zto0mTkkWRkZtw+chUnAoks=
+github.com/blend/go-sdk v0.0.0-20191106184903-8f22aee8cd48/go.mod h1:3GUb0YsHFNTJ6hsJTpzdmCUl05o8HisKjx5OAlzYKdw=
 github.com/blend/go-sdk v2.0.0+incompatible h1:FL9X/of4ZYO5D2JJNI4vHrbXPfuSDbUa7h8JP9+E92w=
 github.com/blend/go-sdk v2.0.0+incompatible/go.mod h1:3GUb0YsHFNTJ6hsJTpzdmCUl05o8HisKjx5OAlzYKdw=
 github.com/go-sql-driver/mysql v1.4.0 h1:7LxgVwFb2hIQtMm87NdgAVfXjnt4OePseqT1tKx+opk=

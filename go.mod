@@ -4,7 +4,7 @@ go 1.12
 
 require (
 	github.com/PuerkitoBio/goquery v1.5.0
-	github.com/blend/go-sdk 8f22aee8cd48bdf12e70a7d3d135df69ce23b5db // indirect
+	github.com/blend/go-sdk v0.0.0-20191106184903-8f22aee8cd48 // indirect
 	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0 // indirect
 	github.com/gorilla/mux v1.7.1
 	github.com/jmoiron/sqlx v1.2.0

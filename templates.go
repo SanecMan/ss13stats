@@ -36,14 +36,14 @@ const tmplBase string = `<!DOCTYPE html>
                 <meta charset="utf-8">
 		<link rel="stylesheet" href="/static/style.css" type="text/css">
                 <title>
-                        {{block "title" .}}NO TITLE{{end}} | ss13.se
+                        {{block "title" .}}NO TITLE{{end}} | stats.aperture13.online
                 </title>
         </head>
         <body>
                 <header>
-			<a href="/">ss13.se</a>
-			<a href="/server/{{.Hub.ID}}">Global stats</a>
-			<p class="right">Last updated: {{.Hub.LastUpdated}}</p>
+			<a href="/">stats.aperture13.online</a>
+			<a href="/server/{{.Hub.ID}}">Статистика</a>
+			<p class="right">Последнее обновление: {{.Hub.LastUpdated}}</p>
                 </header>
 
                 <section id="body">
@@ -153,23 +153,23 @@ footer {
 <h1>{{.Server.Title}}</h1>
 
 {{if .Server.SiteURL}}
-	<span class="button"><a href="{{.Server.SiteURL}}">Website</a></span>
+	<span class="button"><a href="{{.Server.SiteURL}}">Сайт сервера</a></span>
 {{end}}
 
 {{if .Server.ByondURL}}
-	<span class="button"><a href="{{.Server.ByondURL}}">Join game</a></span>
+	<span class="button"><a href="{{.Server.ByondURL}}">Подключиться</a></span>
 {{end}}
 
 <p>Current players: {{.Server.Players}}</p>
 
 <h2>Daily History</h2>
-<img src="/server/{{.Server.ID}}/daily" alt="Unable to show a pretty graph">
+<img src="/server/{{.Server.ID}}/daily" alt="Дневной график недоступен">
 <h2>Weekly History</h2>
-<img src="/server/{{.Server.ID}}/weekly" alt="Unable to show a pretty graph">
+<img src="/server/{{.Server.ID}}/weekly" alt="Недельный график недоступен">
 <h2>Average per day</h2>
-<img src="/server/{{.Server.ID}}/averagedaily" alt="Unable to show a pretty graph">
+<img src="/server/{{.Server.ID}}/averagedaily" alt="Пиковый онлайн за день недоступен">
 <h2>Average per hour</h2>
-<img src="/server/{{.Server.ID}}/averagehourly" alt="Unable to show a pretty graph">
+<img src="/server/{{.Server.ID}}/averagehourly" alt="Пиковый онлайн за час недоступен">
 {{end}}
 `,
 }
