@@ -24,7 +24,7 @@ RUN CGO_ENABLED=1 go build -o /build/app ./cmd/server/server.go
 
 FROM alpine:3.20 AS final
 
-RUN apk add --no-cache ca-certificates sqlite-libs
+RUN apk add --no-cache ca-certificates sqlite-libs bash git
 
 COPY --from=builder /build /build
 
@@ -34,5 +34,5 @@ VOLUME $HOME
 
 EXPOSE 8082
 
-# стартуем на локалке
-CMD ["/build/app", "-addr=127.0.0.1:8082", "-path=/data/servers.db"]
+# стартуем на всех интерфейсах
+CMD ["/build/app", "-addr=0.0.0.0:8082", "-path=/data/servers.db"]
