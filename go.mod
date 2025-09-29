@@ -9,7 +9,7 @@ require (
 	github.com/gorilla/mux v1.7.1
 	github.com/jmoiron/sqlx v1.2.0
 	github.com/kr/pretty v0.1.0
-	github.com/mattn/go-sqlite3 v1.10.0
+	github.com/mattn/go-sqlite3 v1.14.22
 	github.com/sajari/regression v1.0.0
 	github.com/wcharczuk/go-chart v2.0.1+incompatible
 	golang.org/x/image v0.0.0-20190507092727-e4e5bf290fec // indirect
